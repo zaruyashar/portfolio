@@ -10,6 +10,24 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 
+
+
+    document.addEventListener("click", function (event) {
+        var navbarCollapse = document.getElementById("navbarNav");
+        var toggler = document.querySelector(".navbar-toggler");
+
+
+        if (navbarCollapse.classList.contains("show") && !navbarCollapse.contains(event.target) && !toggler.contains(event.target)) {
+
+            var bsCollapse = new bootstrap.Collapse(navbarCollapse, {
+                toggle: false
+            });
+            bsCollapse.hide();
+        }
+    });
+
+
+
     // greet recruiter
     console.log("%cMerhaba! :) Buraya bakmanıza sevindim.", "color: #2563eb; font-size: 16px; font-weight: bold;");
     console.log("Portföyün kendisi de bir hands-on öğrenme deneyimi oldu. Hatta başka projelerim olmasına rağmen ilk canlıya aldığım içerik bu. Siteyi clean code prensiplerini gözeterek HTML5, CSS3 ve Vanilla JS ile hazırlandım. Bu süreçte Gemini 3 Pro'dan da destek aldım. Sorularımı sağ olsun bıkmadan usanmadan yanıtladı. AI destekli bu dijital çağda öğrenme keyfi bambaşka!");
