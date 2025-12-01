@@ -4,10 +4,14 @@
     --bg-color: #ffffff;
     /* custom properties */
     --text-primary: #111827;
-    --text-secondary: #4b5563;
+    --text-secondary: #374151;
     --accent-color: #2563eb;
     --font-sans: "Inter", sans-serif;
     --font-mono: "JetBrains Mono", monospace;
+}
+
+.text-muted {
+    color: var(--text-secondary) !important;
 }
 
 body {
