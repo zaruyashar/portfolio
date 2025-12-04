@@ -148,9 +148,10 @@ h6 {
 
 /* numbered section headers after the title nej.dev() */
 .section-title::after {
-    content: ""; /* "malloc" logic */
+    content: "";
     display: block;
-    width: 200px;
+    flex-grow: 1;
+    max-width: 200px;
     height: 1px;
     background: #e5e7eb;
     margin-left: 20px;
@@ -217,24 +218,30 @@ h6 {
 }
 
 .lang-btn {
-    padding: 4px 10px; /* Kutucuk boyutu */
-    border-radius: 6px; /* Köşeleri yuvarla */
+    padding: 4px 10px;
+    /* Kutucuk boyutu */
+    border-radius: 6px;
+    /* Köşeleri yuvarla */
     transition: all 0.3s ease;
     text-decoration: none;
     font-weight: 500;
-    color: var(--text-secondary); /* Pasif renk */
+    color: var(--text-secondary);
+    /* Pasif renk */
 }
 
 /* Mouse ile üzerine gelince */
 .lang-btn:hover {
     color: var(--accent-color) !important;
-    background-color: rgba(37, 99, 235, 0.05); /* Çok hafif mavi */
+    background-color: rgba(37, 99, 235, 0.05);
+    /* Çok hafif mavi */
 }
 
 /* Aktif Dilin Görünümü */
 .lang-btn.active {
-    background-color: rgba(37, 99, 235, 0.1); /* Hafif Mavi Arkaplan */
-    color: var(--accent-color) !important;   /* Mavi Yazı */
+    background-color: rgba(37, 99, 235, 0.1);
+    /* Hafif Mavi Arkaplan */
+    color: var(--accent-color) !important;
+    /* Mavi Yazı */
     font-weight: 700;
 }
 
