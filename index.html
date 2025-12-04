@@ -22,11 +22,20 @@
             </button>
             <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                 <ul class="navbar-nav font-mono small">
-                    <li class="nav-item"><a class="nav-link" href="#about">01. Dönüşüm</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#stack">02. Yığın</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#projects">03. Projeler</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#experience">04. Özgeçmiş</a></li>
-                    <li class="nav-item"><a class="nav-link text-accent" href="#contact">05. İletişim</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about" data-i18n="nav.about">01. Dönüşüm</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#stack" data-i18n="nav.stack">02. Yığın</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects" data-i18n="nav.projects">03. Projeler</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="#experience" data-i18n="nav.experience">04.
+                            Özgeçmiş</a></li>
+                    <li class="nav-item"><a class="nav-link text-accent" href="#contact" data-i18n="nav.contact">05.
+                            İletişim</a></li>
+                    <li class="nav-item ms-lg-3 d-flex align-items-center">
+                        <div class="lang-switch font-mono small d-flex gap-2"> <span onclick="setLanguage('tr')"
+                                id="btn-tr" class="lang-btn">TR</span>
+                            <span onclick="setLanguage('en')" id="btn-en" class="lang-btn">EN</span>
+                        </div>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -37,12 +46,13 @@
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-8">
-                    <p class="font-mono text-accent mb-2">Merhaba, ben Nejla Nur Yaşar.</p>
+                    <p class="font-mono text-accent mb-2" data-i18n="hero.greeting">Merhaba, ben Nejla Nur Yaşar.</p>
                     <h1 class="display-1 fw-bold tracking-tighter mb-3">
-                        Diller Tamam.<br>
-                        <span class="text-secondary-custom">Artık Mantığı Geliştiriyorum.</span>
+                        <span data-i18n="hero.title_main">Diller Tamam.</span><br>
+                        <span class="text-secondary-custom" data-i18n="hero.title_sub">Artık Mantığı
+                            Geliştiriyorum.</span>
                     </h1>
-                    <p class="lead text-muted mw-600 mb-5">
+                    <p class="lead text-muted mw-600 mb-5" data-i18n="hero.description">
                         Eski <span class="text-highlight">Teknik Metin Yerelleştirme Uzmanı</span> (Apple, Netflix,
                         AWS). <br>
                         Yeni <span class="text-highlight">Yazılım Geliştirici & DevOps Adayı</span>. <br>
@@ -51,8 +61,10 @@
                         optimize etmek için işin mutfağına geçiş yapıyorum.
                     </p>
                     <div class="d-flex align-items-center gap-3">
-                        <a href="#projects" class="btn btn-custom-primary font-mono">Projeleri İncele</a>
-                        <a href="#contact" class="btn btn-custom-dark font-mono">İletişime Geç</a>
+                        <a href="#projects" class="btn btn-custom-primary font-mono"
+                            data-i18n="hero.btn_projects">Projeleri İncele</a>
+                        <a href="#contact" class="btn btn-custom-dark font-mono" data-i18n="hero.btn_contact">İletişime
+                            Geç</a>
                     </div>
                 </div>
             </div>
@@ -71,43 +83,49 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-6 mb-4">
-                    <h2 class="section-title"><span class="text-accent font-mono">01.</span> Mühendis Bakış Açısı</h2>
-                    <p class="mt-4">
-                        Boğaziçi Üniversitesinde aldığım eğitim ve teknik çeviri kariyerim bana şunu
+                    <h2 class="section-title">
+                        <span class="text-accent font-mono">01.</span><span data-i18n="about.title">Mühendis Bakış Açısı</span>
+                    </h2>
+
+                    <p class="mt-4" data-i18n="about.p1">Boğaziçi Üniversitesinde aldığım eğitim ve teknik çeviri
+                        kariyerim bana şunu
                         öğretti: <strong>Bütünün kalitesini belirleyen, önemi çoğunlukla göz ardı edilebilen
                             detaylardır.</strong>
                     </p>
-                    <p>
-                        Netflix ve Apple gibi sektör devlerin ürünlerinde "Lead Reviewer" olarak çalışırken sadece
+                    <p data-i18n="about.p2">Netflix ve Apple gibi sektör devlerin ürünlerinde "Lead Reviewer" olarak
+                        çalışırken sadece
                         kelimeleri değil UI string hatalarını, bağlam kopukluklarını ve kullanıcı deneyimini (UX)
                         denetleyip
                         iyileştirme fırsatı buldum. Bu süreçteyse yazılımın "nasıl göründüğünden" çok "nasıl
                         çalıştığına" ve veri akışına ilgi duymaya
                         başladım.
                     </p>
-                    <p>
-                        Şu anda <strong>Harvard CS50</strong> ve ileri seviye <em>bootcamp'ler</em> ile bu analitik
+                    <p data-i18n="about.p3">Şu anda <strong>Harvard CS50</strong> ve ileri seviye bootcamp'ler
+                        ile bu analitik
                         yetkinliğimi kodlama becerisiyle birleştiriyorum. Çabalarımı bir lisans derecesiyle taçlandırmak
                         adına da İstanbul Üniversitesinde Yönetim Bilişim Sistemleri okuyorum.
                     </p>
-                    <p>
-                        Hedefim: <em>Software Architect</em> vizyonuna sahip, donanımlı ve her daim öğrenmeye devam eden
+                    <p data-i18n="about.p4">Hedefim: <em>Software Architect</em> vizyonuna sahip, donanımlı ve her daim
+                        öğrenmeye devam eden
                         bir geliştirici olmak.
                     </p>
 
                 </div>
                 <div class="col-lg-5 offset-lg-1">
                     <div class="card border-0 shadow-sm p-4 h-100">
-                        <h4 class="h5 mb-3 font-mono">Odak Alanlarım</h4>
+                        <h4 class="h5 mb-3 font-mono" data-i18n="about.focus_title">Odak Alanlarım</h4>
                         <ul class="list-unstyled">
-                            <li class="mb-2"><i class="bi bi-arrow-right text-accent me-2"></i><strong><em>Backend</em>
-                                    Mantığı:</strong> C ve Python ile güçlü algoritmalar yazmayı öğreniyorum.</li>
-                            <li class="mb-2"><i class="bi bi-arrow-right text-accent me-2"></i><strong>DevOps &
-                                    Bulut:</strong> CI/CD, Linux ve Otomasyon kültürü hakkında yatay bilgi birikimi
-                                oluşturmaya çalışıyorum.</li>
-                            <li class="mb-2"><i class="bi bi-arrow-right text-accent me-2"></i><strong>Kaliteli
-                                    Kod:</strong> Verimlilik ve sürdürülebilirlik tutkum neticesinde, Clean Code
-                                prensipleri ile Lean Six Sigma ilkelerinin ışığında yürümek istiyorum.
+                            <li class="mb-2">
+                                <i class="bi bi-arrow-right text-accent me-2"></i>
+                                <span data-i18n="about.focus_backend"><strong>Backend Mantığı:</strong>...</span>
+                            </li>
+                            <li class="mb-2">
+                                <i class="bi bi-arrow-right text-accent me-2"></i>
+                                <span data-i18n="about.focus_devops"><strong>DevOps & Bulut:</strong>...</span>
+                            </li>
+                            <li class="mb-2">
+                                <i class="bi bi-arrow-right text-accent me-2"></i>
+                                <span data-i18n="about.focus_quality"><strong>Kaliteli Kod:</strong>...</span>
                             </li>
                         </ul>
                     </div>
@@ -118,13 +136,16 @@
 
     <section id="stack" class="py-5" style="padding-top: 6rem; padding-bottom: 6rem;">
         <div class="container">
-            <h2 class="section-title mb-5"><span class="text-accent font-mono">02.</span> Teknoloji Envanteri</h2>
+            <h2 class="section-title mb-5">
+                <span class="text-accent font-mono">02.</span><span data-i18n="stack.title">Teknoloji Envanteri</span>
+            </h2>
 
             <div class="row g-4">
 
                 <div class="col-md-6">
                     <div class="tech-card h-100">
-                        <h3 class="h6 font-mono text-uppercase text-muted mb-3">Core & Backend</h3>
+                        <h3 class="h6 font-mono text-uppercase fw-bold mb-3" data-i18n="stack.cat_backend">Core &
+                            Backend</h3>
                         <div class="d-flex flex-wrap gap-2">
                             <span class="badge-custom">Python</span>
                             <span class="badge-custom">C</span>
@@ -136,7 +157,8 @@
 
                 <div class="col-md-6">
                     <div class="tech-card h-100">
-                        <h3 class="h6 font-mono text-uppercase text-muted mb-3">Web Technologıes</h3>
+                        <h3 class="h6 font-mono text-uppercase fw-bold mb-3" data-i18n="stack.cat_web">Web
+                            Technologıes</h3>
                         <div class="d-flex flex-wrap gap-2">
                             <span class="badge-custom">HTML5 / CSS3</span>
                             <span class="badge-custom">Bootstrap 5</span>
@@ -148,7 +170,8 @@
 
                 <div class="col-md-6">
                     <div class="tech-card h-100">
-                        <h3 class="h6 font-mono text-uppercase text-muted mb-3">DevOps & Tools</h3>
+                        <h3 class="h6 font-mono text-uppercase fw-bold mb-3" data-i18n="stack.cat_devops">DevOps &
+                            Tools</h3>
                         <div class="d-flex flex-wrap gap-2">
                             <span class="badge-custom">Git / GitHub</span>
                             <span class="badge-custom">Linux / Bash</span>
@@ -161,7 +184,8 @@
 
                 <div class="col-md-6">
                     <div class="tech-card h-100">
-                        <h3 class="h6 font-mono text-uppercase text-muted mb-3">Cloud & AI Servıces</h3>
+                        <h3 class="h6 font-mono text-uppercase fw-bold mb-3" data-i18n="stack.cat_cloud">Cloud & AI
+                            Servıces</h3>
                         <div class="d-flex flex-wrap gap-2">
                             <span class="badge-custom">Cloudflare</span>
                             <span class="badge-custom">Amazon Q Dev</span>
@@ -180,9 +204,9 @@
                         <div class="spinner-border text-accent" role="status"></div>
                     </div>
                     <div class="col-md-10">
-                        <h5 class="font-mono h6 mb-2">Compiling / Learning...</h5>
+                        <h5 class="font-mono h6 mb-2" data-i18n="stack.loading_title">Compiling / Learning...</h5>
                         <p class="small text-muted mb-0">
-                            Şu anda aktif olarak yüklenenler:
+                            <span data-i18n="stack.loading_desc">Şu anda aktif olarak yüklenenler:</span>
                             <span class="text-dark fw-bold">Java, C#, Go, React, Dart, Flutter</span>
                         </p>
                     </div>
@@ -193,7 +217,9 @@
 
     <section id="projects" class="py-5 bg-light-custom" style="padding-top: 6rem; padding-bottom: 6rem;">
         <div class="container">
-            <h2 class="section-title mb-5"><span class="text-accent font-mono">03.</span> Projeler</h2>
+            <h2 class="section-title mb-5">
+                <span class="text-accent font-mono">03.</span><span data-i18n="projects.title">Projeler</span>
+            </h2>
 
             <div class="row g-4">
 
@@ -211,7 +237,7 @@
                             </div>
                         </div>
                         <h3 class="h5 fw-bold">nej.dev</h3>
-                        <p class="text-muted small mb-4">
+                        <p class="text-muted small mb-4" data-i18n="projects.nejdev_desc">
                             Framework bağımlılığı olmadan Vanilla JS ve Clean Code prensipleriyle
                             geliştirildi. Deployment sürecinde <strong>Cloudflare</strong>
                             altyapısı kullanılarak DNS yönetimi ve performans
@@ -240,7 +266,7 @@
                             </div>
                         </div>
                         <h3 class="h5 fw-bold">Readability Analyzer</h3>
-                        <p class="text-muted small mb-4">
+                        <p class="text-muted small mb-4" data-i18n="projects.readability_desc">
                             Metinlerin okuma seviyesini analiz eden, Harvard CS50 kapsamında geliştirilmiş bir
                             algoritma. Coleman-Liau indeksini kullanarak analiz eder.
                         </p>
@@ -266,7 +292,7 @@
                             </div>
                         </div>
                         <h3 class="h5 fw-bold">GAINS MAX</h3>
-                        <p class="text-muted small mb-4">
+                        <p class="text-muted small mb-4" data-i18n="projects.gainsmax_desc">
                             Fitness hesaplamalarını (yağ oranı, kalori vb.) istemci taraflı (client-side) olarak yapan,
                             performans odaklı bir tatik web uygulaması.
                         </p>
@@ -284,14 +310,17 @@
 
     <section id="experience" class="py-5" style="padding-top: 6rem; padding-bottom: 6rem;">
         <div class="container">
-            <h2 class="section-title mb-5"><span class="text-accent font-mono">04.</span> Profesyonel Temel</h2>
+            <h2 class="section-title mb-5">
+                <span class="text-accent font-mono">04.</span><span data-i18n="experience.title">Profesyonel Temel</span>
+            </h2>
 
             <div class="timeline">
                 <div class="timeline-item">
-                    <span class="timeline-date font-mono text-muted">2019 - 2023</span>
-                    <h4 class="h5 fw-bold">Lead Reviewer & Linguist (Netflix & Apple)</h4>
-                    <p class="small text-muted mb-2">İstanbul</p>
-                    <ul class="small text-secondary">
+                    <span class="timeline-date font-mono text-muted" data-i18n="experience.job1_date">2019 - 2023</span>
+                    <h4 class="h5 fw-bold" data-i18n="experience.job1_title">Lead Reviewer & Linguist (Netflix & Apple)
+                    </h4>
+                    <p class="small text-muted mb-2" data-i18n="experience.job1_location">İstanbul</p>
+                    <ul class="small text-secondary" data-i18n="experience.job1_list">
                         <li>Netflix Studio'nun en yüksek hacimli müşteriye dönüşmesi sürecini yönettim.</li>
                         <li>"<em>Netflix Studio Localization Turkish Style Guide</em>"ı sıfırdan oluşturdum.</li>
                         <li>Apple, Google ve Netflix için UI string testleri, bağlam analizi ve kalite güvencesi (QA)
@@ -301,10 +330,13 @@
                 </div>
 
                 <div class="timeline-item">
-                    <span class="timeline-date font-mono text-muted">2023 - Present</span>
-                    <h4 class="h5 fw-bold">Freelance Tech Translator & Dev Candidate</h4>
-                    <p class="small text-muted mb-2">Amazon, Kaspersky, Meta, VMware</p>
-                    <ul class="small text-secondary">
+                    <span class="timeline-date font-mono text-muted" data-i18n="experience.job2_date">2023 -
+                        Present</span>
+                    <h4 class="h5 fw-bold" data-i18n="experience.job2_title">Freelance Tech Translator & Dev Candidate
+                    </h4>
+                    <p class="small text-muted mb-2" data-i18n="experience.job2_location">Amazon, Kaspersky, Meta,
+                        VMware</p>
+                    <ul class="small text-secondary" data-i18n="experience.job2_list">
                         <li>Amazon Web Services (AWS) teknik dokümanlarını çevirdim.</li>
                         <li>Kaspersky siber güvenlik metinlerini yerelleştirdim.</li>
                         <li>Yazılım geliştirme eğitimlerine katılıp kişisel projeler geliştirdim.</li>
@@ -314,20 +346,25 @@
         </div>
     </section>
 
-    <section id="contact" class="py-5" style="padding-top: 6rem; padding-bottom: 6rem;">
+
+    <section id="contact" class="py-5 bg-light-custom" style="padding-top: 6rem; padding-bottom: 6rem;">
         <div class="container">
-            <h2 class="section-title mb-5"><span class="text-accent font-mono">05.</span> Sırada Ne Var?</h2>
+            <h2 class="section-title mb-5">
+                <span class="text-accent font-mono">05.</span><span data-i18n="contact.title">Sırada Ne Var?</span>
+            </h2>
 
             <div class="mw-600 mx-auto text-center">
-                <h3 class="display-5 fw-bold mb-4">Birlikte Geliştirelim</h3>
-                <p class="text-muted mb-5">
-                    Şu anda DevOps / Backend / Full Stack odaklı staj ve junior pozisyonlarına açığım. Kendimi geliştirmeye devam
+                <h3 class="display-5 fw-bold mb-4" data-i18n="contact.main_heading">Birlikte Geliştirelim</h3>
+                <p class="text-muted mb-5" data-i18n="contact.text">
+                    Şu anda DevOps / Backend / Full Stack odaklı staj ve junior pozisyonlarına açığım. Kendimi
+                    geliştirmeye devam
                     ediyorum. Bir işi yapmayı öğrenmenin en iyi yolu ise o işi yapmaktır, bunu biliyorum.
                     Çok dilli (Tr, En, Jp, Ru) yetkinliğim, teknik altyapım ve "yaşam boyu öğrenme" felsefemle ekibinize
                     değer katmaya hazırım. Ayrıca, geri bildirimlere bayılırım!
                 </p>
 
-                <a href="mailto:nejlanurguney@gmail.com" class="btn btn-custom-primary btn-lg font-mono">E-posta
+                <a href="mailto:nejlanurguney@gmail.com" class="btn btn-custom-primary btn-lg font-mono"
+                    data-i18n="contact.btn_email">E-posta
                     Gönder</a>
 
                 <div class="mt-5 d-flex justify-content-center gap-4">
@@ -340,12 +377,14 @@
         </div>
     </section>
 
-    <footer class="py-4 text-center text-muted small font-mono">
-        <p>Architected by zaruyashar. 2025.</p>
+    <footer class="py-4 text-center text-muted small font-mono bg-light-custom">
+        <p data-i18n="footer.text">Architected by zaruyashar. 2025.</p>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="script.js"></script>
+
+
 </body>
 
 </html>
